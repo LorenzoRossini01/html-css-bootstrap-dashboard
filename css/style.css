@@ -1,6 +1,6 @@
-/* .col {
+.debug {
   border: 1px dashed red;
-} */
+}
 nav {
   height: 100px;
 }
@@ -41,6 +41,23 @@ nav {
 #main-content {
   background-color: antiquewhite;
   overflow: auto;
+  height: 100%;
+  width: 100%;
+}
+
+#main-content-top {
+  width: 100%;
+}
+
+#main-content-top .container {
+  height: 100%;
+}
+
+.banner-bedge {
+  background-color: #165bba;
+}
+
+#main-content-bottom {
 }
 
 @media screen and (min-width: 992px) {
