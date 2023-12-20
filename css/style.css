@@ -39,7 +39,6 @@ nav {
 }
 
 #main-content {
-  background-color: antiquewhite;
   overflow: auto;
   height: 100%;
   width: 100%;
@@ -60,6 +59,14 @@ nav {
 .card-header {
   font-size: 1.7rem;
   font-weight: 600;
+}
+
+td {
+  vertical-align: middle;
+}
+
+#todo-list .list-group-items label:hover {
+  cursor: pointer;
 }
 
 @media screen and (min-width: 992px) {
