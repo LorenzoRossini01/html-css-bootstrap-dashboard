@@ -57,7 +57,9 @@ nav {
   background-color: #165bba;
 }
 
-#main-content-bottom {
+.card-header {
+  font-size: 1.7rem;
+  font-weight: 600;
 }
 
 @media screen and (min-width: 992px) {
