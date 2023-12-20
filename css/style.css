@@ -2,7 +2,7 @@
   border: 1px dashed red;
 }
 nav {
-  height: 100px;
+  /* min-height: 100px; */
 }
 #main {
   height: calc(100vh - 75px);
@@ -71,6 +71,6 @@ nav {
 
   #sidebar ul {
     text-align: left;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
   }
 }
