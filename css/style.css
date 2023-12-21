@@ -49,6 +49,16 @@
   height: 100%;
 }
 
+#sidebar ul div {
+  display: inline-block;
+  width: 3rem;
+}
+
+#sidebar li:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+}
+
 #main-content {
   overflow: auto;
   height: 100%;
@@ -74,6 +84,10 @@
 
 td {
   vertical-align: middle;
+}
+
+.accordion-button:not(.collapsed) {
+  color: #6ea8fe;
 }
 
 #todo-list .list-group-items label:hover {

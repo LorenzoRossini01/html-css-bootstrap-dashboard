@@ -31,6 +31,7 @@
     <nav class="navbar navbar-expand-lg bg-white">
       <div class="container-fluid">
         <div class="row w-100 align-items-top">
+          <!-- nav left -->
           <div class="col flex-grow-0 pt-lg-1">
             <a class="navbar-brand" href="#">
               <img
@@ -47,7 +48,7 @@
               />
             </a>
           </div>
-
+          <!-- nav center -->
           <div class="col flex-grow-1 pt-4 pt-lg-1">
             <form class="d-flex bg-body-tertiary rounded" role="search">
               <button class="btn" type="submit">
@@ -61,7 +62,7 @@
               />
             </form>
           </div>
-          <!-- da rivedere -->
+          <!-- nav right -->
           <div class="col flex-grow-0 pt-4 pt-lg-1">
             <button
               class="navbar-toggler border-0"
@@ -127,22 +128,30 @@
           class="container d-flex flex-column justify-content-between align-items-center"
         >
           <ul class="pt-4">
-            <li>
-              <i class="fa-solid fa-house pe-lg-2"></i>
+            <li class="p-2 my-2">
+              <div>
+                <i class="fa-solid fa-house pe-lg-2"></i>
+              </div>
               <span class="d-none d-lg-inline">Home</span>
             </li>
-            <li class="py-3">
-              <i class="fa-solid fa-chart-simple pe-lg-3"></i>
+            <li class="p-2 my-2">
+              <div>
+                <i class="fa-solid fa-chart-simple pe-lg-3"></i>
+              </div>
               <span class="d-none d-lg-inline">Stats</span>
             </li>
-            <li>
-              <i class="fa-solid fa-signal pe-lg-2"></i>
+            <li class="p-2 my-2">
+              <div>
+                <i class="fa-solid fa-signal pe-lg-2"></i>
+              </div>
               <span class="d-none d-lg-inline">Signals</span>
             </li>
           </ul>
-          <ul class="pb-5 pb-lg-4">
-            <li id="settings">
-              <i class="fa-solid fa-gear pe-lg-3"></i>
+          <ul>
+            <li id="settings" class="py-3 pb-lg-4 px-2">
+              <div>
+                <i class="fa-solid fa-gear pe-lg-3"></i>
+              </div>
               <span class="d-none d-lg-inline">Admin</span>
             </li>
           </ul>
@@ -348,6 +357,7 @@
                   </form>
                 </div>
               </div>
+              <!-- OFFCANVAS END -->
             </div>
           </div>
         </div>
@@ -361,7 +371,7 @@
                   <div class="card-header">Prossime classi</div>
                   <div class="card-body">
                     <!-- tabella -->
-                    <table class="table text-center align-center">
+                    <table class="table table-hover text-center align-center">
                       <thead>
                         <tr>
                           <th class="col-6 text-start" scope="col">Nome</th>
@@ -631,7 +641,7 @@
                           data-bs-parent="#accordionExample"
                         >
                           <div class="accordion-body">
-                            Come posso aggiungere un nuovo studente?
+                            Clicca sul + in alto nella sezione blu
                           </div>
                         </div>
                       </div>
@@ -655,8 +665,7 @@
                           data-bs-parent="#accordionExample"
                         >
                           <div class="accordion-body">
-                            Come posso accedere alle informazioni del mio
-                            account?
+                            Clicca sull'icona della campanella
                           </div>
                         </div>
                       </div>
