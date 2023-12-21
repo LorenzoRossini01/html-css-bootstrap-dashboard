@@ -80,6 +80,14 @@ td {
   cursor: pointer;
 }
 
+.offcanvas.offcanvas-end {
+  width: 100%;
+}
+
+#form-confirm {
+  transform: scale(1.5);
+}
+
 @media screen and (min-width: 992px) {
   nav {
     height: 75px;
@@ -92,5 +100,9 @@ td {
   #sidebar ul {
     text-align: left;
     font-size: 1.5rem;
+  }
+
+  .offcanvas.offcanvas-end {
+    width: 45%;
   }
 }

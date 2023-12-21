@@ -192,8 +192,160 @@
               </div>
               <div class="col-md-2 fs-5">
                 <span>Nuovo studente</span>
-                <div class="btn btn-outline-light ms-3 mt-md-2">
+                <button
+                  class="btn btn-outline-light ms-3 mt-md-2"
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#offcanvas-form"
+                  aria-controls="offcanvas-form"
+                >
                   <i class="fa-solid fa-plus"></i>
+                </button>
+              </div>
+
+              <!-- OFFCANVAS -->
+              <div
+                class="offcanvas offcanvas-end"
+                data-bs-scroll="true"
+                tabindex="-1"
+                id="offcanvas-form"
+                aria-labelledby="offcanvas-formLabel"
+              >
+                <div class="offcanvas-header">
+                  <h3 class="offcanvas-title" id="offcanvas-formLabel">
+                    Inserisci un nuovo studente
+                  </h3>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="offcanvas"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="offcanvas-body">
+                  <form action="#" method="post">
+                    <div class="container-fluid">
+                      <div class="row fs-5 g-4">
+                        <div class="col-md-6 d-flex flex-column">
+                          <label for="form-name" class="pb-2 fw-bolder">
+                            Nome
+                          </label>
+                          <input
+                            type="text"
+                            id="form-name"
+                            class="rounded form-control"
+                          />
+                        </div>
+
+                        <div class="col-md-6 d-flex flex-column">
+                          <label for="form-surname" class="pb-2 fw-bolder">
+                            Cognome
+                          </label>
+                          <input
+                            type="text"
+                            id="form-surname"
+                            class="rounded form-control"
+                          />
+                        </div>
+
+                        <div class="col-md-6 d-flex flex-column">
+                          <label for="form-email" class="pb-2 fw-bolder">
+                            Email
+                          </label>
+                          <div class="input-group">
+                            <span
+                              class="input-group-text fw-bolder"
+                              id="basic-addon1"
+                              >@</span
+                            >
+                            <input
+                              type="email"
+                              class="form-control"
+                              id="form-email"
+                              aria-label="Username"
+                              aria-describedby="basic-addon1"
+                            />
+                          </div>
+                        </div>
+
+                        <div class="col-md-6 d-flex flex-column">
+                          <label for="form-password1" class="pb-2 fw-bolder">
+                            Password
+                          </label>
+                          <input
+                            type="password"
+                            id="form-password1"
+                            class="rounded form-control"
+                          />
+                        </div>
+
+                        <div class="col-md-12 d-flex flex-column">
+                          <label for="form-address" class="pb-2 fw-bolder">
+                            Indirizzo
+                          </label>
+                          <input
+                            type="text"
+                            id="form-address"
+                            class="rounded form-control"
+                          />
+                        </div>
+
+                        <div class="col-md-6 d-flex flex-column">
+                          <label for="form-city" class="pb-2 fw-bolder">
+                            Città
+                          </label>
+                          <input
+                            type="text"
+                            id="form-city"
+                            class="rounded form-control"
+                          />
+                        </div>
+
+                        <div class="col-md-4 d-flex flex-column">
+                          <label for="form-state" class="pb-2 fw-bolder">
+                            Stato
+                          </label>
+                          <select class="form-select" id="form-state">
+                            <option selected>Choose...</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                        </div>
+
+                        <div class="col-md-2 d-flex flex-column">
+                          <label for="form-cap" class="pb-2 fw-bolder">
+                            CAP
+                          </label>
+                          <input
+                            type="number"
+                            id="form-cap"
+                            class="rounded form-control"
+                          />
+                        </div>
+
+                        <div class="col-md-12 d-flex flex-column">
+                          <label for="form-address" class="pb-2 fw-bolder">
+                            Foto
+                          </label>
+                          <input
+                            type="file"
+                            class="form-control"
+                            id="inputGroupFile01"
+                          />
+                        </div>
+                        <div>
+                          <input type="checkbox" id="form-confirm" />
+                          <label for="form-confirm" class="pb-2 fw-bolder ps-2">
+                            Seleziona per proseguire
+                          </label>
+                        </div>
+                        <div class="fw-bolder">
+                          <button class="btn btn-primary">Salva</button>
+                          <button class="btn btn-warning">Svuota</button>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
                 </div>
               </div>
             </div>
