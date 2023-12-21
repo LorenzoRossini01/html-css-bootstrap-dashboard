@@ -1,9 +1,20 @@
 .debug {
   border: 1px dashed red;
 }
-nav {
-  /* min-height: 100px; */
+
+.dropdown-toggle::after {
+  display: none;
 }
+
+.navbar-nav .dropdown-menu {
+  position: absolute;
+}
+
+.dropdown-menu[data-bs-popper] {
+  left: auto;
+  right: 0;
+}
+
 #main {
   height: calc(100vh - 75px);
   display: flex;
