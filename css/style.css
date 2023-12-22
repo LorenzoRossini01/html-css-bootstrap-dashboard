@@ -113,10 +113,14 @@ td {
 
   #sidebar ul {
     text-align: left;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 
   .offcanvas.offcanvas-end {
-    width: 45%;
+    width: 75%;
+  }
+
+  #todo-list ul li label {
+    font-size: 10px;
   }
 }
